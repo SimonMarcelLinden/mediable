@@ -17,11 +17,8 @@
 	"autoload": {
 		"psr-4": {
 			"SimonMarcelLinden\\Mediable\\": "src/"
-		},
-		"files": [
-            "src/Helpers/paths.php"
-		]
-	 },
+		}
+	},
 	"autoload-dev": {
 		"psr-4": {
 			"Simonmarcellinden\\Mediable\\Tests\\": "test"
