@@ -1,6 +1,6 @@
 # Mediable for Laravel/Lumen
 
-![Latest Version on Packagist][ico-version]][link-packagist]
+[![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Build Status][ico-travis]][link-travis]
 
@@ -120,3 +120,14 @@ Please see [contributing.md](contributing.md) for details and a todolist.
 ## Security
 
 If you discover any security related issues, please email info@snerve.de instead of using the issue tracker.
+
+
+[ico-version]: https://img.shields.io/packagist/v/simonmarcellinden/mediable.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/simonmarcellinden/mediable.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/simonmarcellinden/mediable/master.svg?style=flat-square
+
+[link-packagist]: https://packagist.org/packages/simonmarcellinden/mediable
+[link-downloads]: https://packagist.org/packages/simonmarcellinden/mediable
+[link-travis]: https://travis-ci.org/simonmarcellinden/mediable
+[link-author]: https://github.com/simonmarcellinden
+[link-contributors]: ../../contributors
