@@ -50,7 +50,19 @@ namespace App\Models;
 use SimonMarcelLinden\Mediable\Models\Media;
 
 class Image extends Media {
+	/**
+	* If you want to use a different table than media , please specify it here.
+	*
+	* @var string
+	*/
+	protected $table = 'images';
 
+	/**
+	 * If you want your media to be stored in a specific file folder, then specify it here.
+	 *
+	 * @var array
+	 */
+	protected $basePath = 'images';
 }
 ```
 Extend your controller with the package controller and specify the eloquent model to be used in the controller. 
@@ -70,20 +82,6 @@ class ImageController extends MediaController {
 	 * @var array
 	 */
 	protected $model = Image::class;
-
-	/**
-	* If you want to use a different table than media , please specify it here.
-	*
-	* @var string
-	*/
-	protected $table = 'images';
-
-	/**
-	 * If you want your media to be stored in a specific file folder, then specify it here.
-	 *
-	 * @var array
-	 */
-	protected $basePath = 'images';
 }
 ```
 
