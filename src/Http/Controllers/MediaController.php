@@ -4,7 +4,7 @@ namespace SimonMarcelLinden\Mediable\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\File;
+
 use \Illuminate\Http\Response;
 
 use Exception;
