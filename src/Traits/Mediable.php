@@ -5,7 +5,7 @@ namespace SimonMarcelLinden\Mediable\Traits;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Str;
+
 use \Validator;
 use \Exception;
 
@@ -21,7 +21,6 @@ trait Mediable {
 	public static function validateRules(Request $request, $rules = null, $messages = null) {
 		$rules 		= ($rules) ? $rules : (new static)->rules;
 		$messages 	= ($messages) ? $messages : (new static)->messages;
-		dd($request->all());
 		return Validator::make($request->all(), $rules, $messages);
 	}
 
