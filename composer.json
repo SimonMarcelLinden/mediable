@@ -14,7 +14,6 @@
 		"Mediable",
 		"Media"
 	],
-	"minimum-stability": "dev",
 	"autoload": {
 		"psr-4": {
 			"SimonMarcelLinden\\Mediable\\": "src/"
