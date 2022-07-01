@@ -95,11 +95,45 @@ Configure the default routes
 	});
 ```
 
+If you need a many to many relation add the follow code to your media model.
+```php
+use SimonMarcelLinden\Mediable\Models\Media;
 
-Add a Script or Style Source directly into your route or controller
+class Image extends Media {
+	/**
+     * Get all of the user that are assigned this model.
+     */
+    public function users() {
+        return $this->morphedByMany(Drink::class, 'mediable');
+    }
 
+	/**
+     * Get all of the products that are assigned this model.
+     */
+    public function products() {
+        return $this->morphedByMany(Product::class, 'mediable');
+	}
+}
+```
+And add the follow code to your Elequent model
 
+```php
+class Product extends Model {
+	use Uuids;
 
+	public function media() {
+        return $this->morphToMany(Image::class, 'mediable', 'mediables', 'mediable_id', "media_id");
+    }
+}
+
+class User extends Model {
+	use Uuids;
+
+	public function media() {
+        return $this->morphToMany(Image::class, 'mediable', 'mediables', 'mediable_id', "media_id");
+    }
+}
+```
 
 ## Change log
 
